@@ -1,0 +1,566 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+header{
+    padding: 0px 90px;
+}
+
+body{
+
+    --main-color:#283526;
+    --primary-color: #888888;
+    --button-background:#4b709e;
+    --primary-button-background:#fe7649;
+    --background-color: #eff2f5;
+}
+
+h1, h2{
+    font-family:Arial, Helvetica, sans-serif;
+    color: var(--main-color);
+}
+
+h3,h4{
+
+    font-family: "muli";
+    color: var(--main-color);
+}
+
+p,a,li,button{
+    font-family: "muli";
+    color: var(--primary-color);
+}
+
+p{
+    font-weight: normal;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+
+}
+
+button{
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+/*--------------------our main menu style--------------------------------*/
+
+
+header nav{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+}
+
+.leftside-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.leftside-menu img{
+    width: 130px;
+    height: 60px;
+}
+.navbar{
+    display: flex;
+
+}
+
+.navbar a{
+    margin-right: 40px;
+    
+}
+
+.navbar a li{
+    font-size: 20px;
+    line-height: 360px;
+    text-transform: capitalize;
+    transition: all 0.2s;
+}
+
+.navbar a li:hover{
+    color: var(--button-background);
+}
+
+/*------------------------------rightside menu css-------------------*/
+
+.righttside-menu{
+    width: 50%;
+    align-items: end;
+}
+
+.right-nav{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.right-nav a{
+    margin-right: 40px;
+    padding: 10px 30px;
+    background:#f3f3f3;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    z-index: 9;
+}
+
+.right-nav button{
+    background-color: var(--button-background);
+    margin-right: 40px;
+    color: white;
+    position:relative;
+    z-index: 9;
+}
+
+.right-nav button:hover{
+    background-color: rgb(14, 40, 119);
+}
+
+.right-nav a li:hover{
+    color:var(--button-background);
+}
+
+
+/*-----------main-hero-section css--------------------*/
+
+
+.main-hero-section{
+    width: 100%;
+    padding: 0px 135px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*margin-bottom: 10rem;*/
+}
+.left-section{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-section h1{
+    margin-bottom: 40px;
+    font-size: 45px;
+    width: 500px;
+    line-height: 60px;
+    text-transform: capitalize;
+}
+.left-section p{
+    font-size: 16px;
+    margin-bottom: 40px;
+    line-height: 20px;
+}
+
+.button-section a img{
+    width: 130px;
+    height: 40px;
+    
+}
+
+.button-section .appstore{
+    height: 43px;
+    margin-bottom: -3px;
+
+}
+
+.button-section a img:first-child{
+    margin-right: 15px;
+}
+
+
+/*-----------main-hero-right-section css--------------------*/
+
+
+.right-section{
+    width: 50%;
+    height: 100%;
+    background-color: var(--background-color);
+    position:absolute;
+    top: 0;
+    right: 0;
+    border-radius: 90px 0px 20px 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-section img{
+    width: 80%;
+    margin-right: 450px;
+}
+
+/*-----------second-section css--------------------*/
+
+.common-section{
+    padding: 0px 135px;
+    width: 100%;
+    height: 700px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 200px;
+}
+
+.second-left-section{
+    width: inherit;
+    height: inherit;
+}
+
+.second-left-section img{
+    width: 400px;
+    height: 500px;
+    margin-top: 40px;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+
+.second-left-section figure{
+    background: var(--background-color);
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+
+}
+
+/*-----------second-right-section css--------------------*/
+
+.second-right-section{
+
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 200px;
+}
+
+.second-right-section h2{
+    margin-bottom: 40px;
+    font-size: 45px;
+    width: 394px;
+    line-height: 60px;
+    text-transform: capitalize;
+}
+
+.second-right-section p{
+    width: 440px;
+    font-size: 16px;
+    margin-bottom: 40px;
+    line-height: 20px;
+}
+
+.button-section .first-button{
+    color: white;
+    background-color: var(--primary-button-background);
+    margin-right: 20px;
+}
+
+.button-section button:last-child{
+    background: transparent;
+    color:var(--primary-color);
+}
+
+.button-section button:first-child:hover{
+    background:#a53009;
+}
+
+.button-section button:last-child:hover{
+    background: var(--primary-button-background);
+    color: white;
+}
+
+/*-------------------thirt-section css--------------------*/
+
+.third-section{
+    width: 100%;
+    height: 700px;
+    padding: 0px 135px;
+    background: var(--background-color);
+}
+
+.third-section h2{
+    width: 100%;
+    font-size: 45px;
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.third-section p{
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.third-section .tasks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 40px;
+    grid-column-gap: 40px;
+}
+
+.third-section .tasks .task1,
+.third-section .tasks .task2,
+.third-section .tasks .task3{
+    text-align: center;
+    padding-top: 20px;
+    transition: all 0.3s linear;
+    border-radius: 20px;
+
+}
+
+.third-section .tasks .task1 img,
+.third-section .tasks .task2 img,
+.third-section .tasks .task3 img{
+    width: 95px;
+    height: 105px;
+}
+
+.third-section .tasks .task1 h3,
+.third-section .tasks .task2 h3,
+.third-section .tasks .task3 h3{
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.third-section .tasks .task3{
+    background: #fff;
+    box-shadow: 0px 4px 20px 0px rgba(35,52,530, 0.25);
+    
+}
+
+.third-section .tasks .task1:hover,
+.third-section .tasks .task2:hover{
+    background: #fff;
+    box-shadow: 0px 4px 20px 0px rgba(35,52,530, 0.25);
+} 
+
+.third-section .tasks .task1:hover > img,
+.third-section .tasks .task2:hover > img,
+.third-section .tasks .task3:hover > img{
+    transform: rotate(180deg);
+}
+
+
+
+/*-------------------fourth-section css--------------------*/
+
+#section-4 img{
+     width: 800px;
+     height: 600px;
+     margin: 0;
+}
+
+#section-4{
+    margin-top: 0px;
+
+}
+#second-left-section{
+    padding-top: 200px;
+}
+
+/*-------------------fifth-section css--------------------*/
+#section-5{
+    margin-top: 0px;
+
+}
+#section-5 img{
+    margin-left: 0px;
+}
+
+
+#fourth-left-section h2{
+    width: 458px;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 900;
+    padding-top: 100px;
+}
+
+.fa-heart{
+    color: rgb(230, 71, 71);
+    margin-right: 6px;
+}
+
+/*-------------------footer-section css--------------------*/
+
+.footer-section{
+    width: 100%;
+    height: auto;
+    background: var(--background-color);
+    padding: 50px 135px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-logo img{
+    width: 140px;
+    height: 55px;
+}
+
+.footer-menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer-menu,
+.menu-1 h4,
+.menu-2 h4,
+.menu-3 h4,
+.menu-4 h4{
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+/*-------------------social media-section css--------------------*/
+
+.social-media{
+    position: fixed;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.social-media a{
+    background: #283526;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 18px;
+    padding: 5px;
+    transition: all 0.3s linear;
+    transform: translateX(-136px);
+}
+.instagram-icon .fa-instagram{
+    padding-right: 2.5px;
+}
+
+.social-media a:hover{
+    transform: translateX(0);
+}
+
+.social-media .fa-brands{
+    padding-left: 10px;
+    font-size: 24px;
+    animation: letszoom 2s alternate-reverse infinite;
+
+}
+.social-media .facebook{
+    background: #0077b5;
+}
+
+.social-media .twitter{
+    background: #00aced;
+}
+
+.social-media .instagram{
+    background: #e4405f;
+}
+
+.social-media .youtube{
+    background: #cd201f;
+}
+
+@keyframes letszoom{
+    from{
+        transform: scale(0.6);
+    }
+
+    to{
+        transform: scale(1);
+    }
+}
+
+
+/*-------------------responsive website--------------------*/
+
+@media (max-width: 770px){
+    header,
+    .main-hero-section,
+    .common-section{
+        padding: 0 50px;
+    }
+    
+    header nav{
+        padding-top: 10px;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+    }
+
+    header nav .leftside-menu{
+        width: 100%;
+        display: block;
+        order: 2;
+    }
+
+
+    .main-hero-section{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .main-hero-section .left-section{
+        width: 100%;
+        order: 2;
+    }
+
+    .main-hero-section .right-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: 2;
+        position: relative;
+        background: transparent;
+    }
+
+    .main-hero-section .right-section img{
+        width: 500px;
+    height: 500px;
+    margin: 0;
+    margin-left: 450px;
+    }
+}
+
+
+
+
+
